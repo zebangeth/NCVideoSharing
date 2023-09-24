@@ -26,8 +26,7 @@ app.post('/process-video', (req, res) => {
   }
 
   // Create the ffmpeg command
-  ffmpeg(inputFilePath)
-    .outputOptions('-vf', 'scale=-1:360') // convert the video into 360p
+  ffmpeg(inputFilePath).outputOptions('-vf', 'scale=-1:360') // convert the video into 360p
     .on('end', function() {
         console.log('Processing finished successfully');
         res.status(200).send('Processing finished successfully');
