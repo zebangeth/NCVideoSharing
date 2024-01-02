@@ -5,8 +5,8 @@ import ffmpeg from 'fluent-ffmpeg';
 
 const storage = new Storage();
 
-const rawVideoBucketName = "tennis-level-raw-videos";
-const processedVideoBucketName = "tennis-level-processed-videos";
+const rawVideoBucketName = "tennis-tube-raw-videos";
+const processedVideoBucketName = "tennis-tube-processed-videos";
 
 const localRawVideoPath = "./raw-videos";
 const localProcessedVideoPath = "./processed-videos";
