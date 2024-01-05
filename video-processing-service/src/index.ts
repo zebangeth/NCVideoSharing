@@ -51,7 +51,7 @@ app.post('/process-video', async (req, res) => {
       return res.status(500).send('Processing failed');
     }
     
-    // Upload the processed video to Cloud Storage
+    // Upload the processed video to Cloud Storagerc
     await uploadProcessedVideo(outputFileName);
   
     await Promise.all([
